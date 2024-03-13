@@ -1,0 +1,12 @@
+body{
+    
+    padding:10px;
+    border: 2px solid; 
+    width: 400px;
+    margin:0 auto;
+    margin-top:200px;
+}
+
+button:hover {
+    color: red;
+}

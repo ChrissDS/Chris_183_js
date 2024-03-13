@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="Kalkulator.css">
+</head>
+<body>
+    <h1 style="text-align: center;">Kalkulator Tambah/Kurang</h1>
+    <p>Bilangan 1 <input number="number" id="inputbil1"> </p> 
+    <p>Bilangan 2 <input number ="number" id="inputbil2" ></p>
+    <button onclick="tambah()">Tambah</button> 
+    <button onclick="kurang()">Kurang</button>
+    <p>Hasil <input number ="number" id="hasil" readonly></p>
+
+    <div id = "penjumlahan"></div>
+    <div id = "pengurangan"></div>
+    <script>
+        function tambah(){
+            var bil1 = parseFloat(document.getElementById("inputbil1").value);
+            var bil2 = parseFloat(document.getElementById("inputbil2").value);
+            var hasil = bil1 + bil2;
+            document.getElementById("hasil").value = hasil;
+        }
+        function kurang(){
+            var bil1 = parseFloat(document.getElementById("inputbil1").value);
+            var bil2 = parseFloat(document.getElementById("inputbil2").value);
+            var hasil = bil1 - bil2;
+            document.getElementById("hasil").value = hasil;
+        }
+    </script>
+</body>
+</html>
